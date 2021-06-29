@@ -1,42 +1,18 @@
-// miniprogram/pages/talk-detail/talk-detail.js
+// miniprogram/pages/myAttention/myAttention.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nickName: '',
-    avatarUrl: '',
-    isCanDraw: false
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      nickName: wx.getStorageSync('nickName') || '',
-      avatarUrl: wx.getStorageSync('avatarUrl') || ''
-    })
-  },
 
-  handleClose() {
-    this.setData({
-      isCanDraw: !this.data.isCanDraw
-    })
-  },
-
-  getUserInfo(e) {
-    console.log(e.detail)
-    if (e.detail.errMsg === 'getUserInfo:ok') {
-      wx.setStorageSync('avatarUrl', e.detail.userInfo.avatarUrl)
-      wx.setStorageSync('nickName', e.detail.userInfo.nickName)
-      this.setData({
-        nickName: e.detail.userInfo.nickName,
-        avatarUrl: e.detail.userInfo.avatarUrl,
-        isCanDraw: !this.data.isCanDraw
-      })
-    }
   },
 
   /**

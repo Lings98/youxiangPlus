@@ -1,0 +1,25 @@
+.cell-box {
+  height: 64rpx;
+  padding: 32rpx 48rpx 32rpx 32rpx
+}
+
+.cell-box .img-icon {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.cell-box .text {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #262528;
+  position: relative;
+  top: -20rpx;
+  margin-left: 32rpx;
+}
+
+.cell-box .arrow-right {
+  width: 26rpx;
+  height: 24rpx;
+  float: right;
+  margin-top: 20rpx;
+}

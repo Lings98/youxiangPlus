@@ -1,12 +1,12 @@
-// components/talkItem/talkItem.js
+// components/cellBox/cellBox.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    talklist: {
-      type: Object
-    }
+    img: String,
+    text: String,
+    url: String
   },
 
   /**
@@ -20,10 +20,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    goDetail () {
-      wx.navigateTo({
-        url: `../../pages/talkDetail/talkDetail`,
-      })
-    }
+
   }
 })

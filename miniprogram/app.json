@@ -3,10 +3,16 @@
     "pages/talk/talk",
     "pages/pic/pic",
     "pages/me/me",
-    "pages/talk-detail/talk-detail"
+    "pages/aboutUs/aboutUs",
+    "pages/myAttention/myAttention",
+    "pages/feedback/feedback",
+    "pages/uploadPic/uploadPic",
+    "pages/myInteraction/myInteraction",
+    "components/talkDetail/talkDetail",
+    "pages/talkDetail/talkDetail"
   ],
   "window": {
-    "backgroundColor": "#ff0000",
+    "backgroundColor": "#f2f2f2",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#262528",
     "navigationBarTitleText": "游享Plus",
@@ -15,6 +21,7 @@
   "tabBar": {
     "color": "#B8B8B8",
     "selectedColor": "#262528",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/talk/talk",

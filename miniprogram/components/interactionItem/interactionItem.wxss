@@ -1,5 +1,5 @@
 .interaction-item-box {
-  width: 686rpx;
+  width: 622rpx;
   margin: 16rpx 32rpx;
   padding: 32rpx 32rpx 16rpx;
   background: #F7F7F7;

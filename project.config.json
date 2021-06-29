@@ -62,6 +62,18 @@
         {
           "name": "pages/talk-detail/talk-detail",
           "pathName": "pages/talk-detail/talk-detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/aboutUs/aboutUs",
+          "pathName": "pages/aboutUs/aboutUs",
           "scene": null
         }
       ]

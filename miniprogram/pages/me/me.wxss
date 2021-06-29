@@ -1,1 +1,71 @@
-/* pages/me/me.wxss */
+.me-page {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.top-back {
+  height: 234rpx;
+  background: #262528;
+  border-radius: 0 0 0 64rpx;
+  padding: 64rpx 48rpx 70rpx;
+  position: relative;
+}
+
+.greet {
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #B8B8B8;
+  line-height: 32rpx;
+}
+
+.name {
+  font-size: 46rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 64rpx;
+  margin-top: 16rpx;
+}
+
+.portrait {
+  position: absolute;
+  top: 80rpx;
+  right: 48rpx;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.praise {
+  float: left;
+  margin-top: 42rpx;
+}
+
+.praise .num{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 48rpx;
+  display: block;
+}
+
+.praise .label {
+  text-align: center;
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #B8B8B8;
+  line-height: 32rpx;
+  display: block;
+}
+
+.edit {
+  position: absolute;
+  top: 240rpx;
+  right: 88rpx;
+  width: 50rpx;
+  height: 48rpx;
+}
+
+.cell-block {
+  margin-top: 32rpx;
+}
