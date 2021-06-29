@@ -1,0 +1,57 @@
+/* pages/talk/talk.wxss */
+.top-block {
+  height: 208rpx;
+  background-color: #262528;
+}
+swiper {
+  position: absolute;
+  width: 100%;
+  height: 300rpx;
+  top: 48rpx;
+}
+swiper-item {
+  position: relative;
+  width: 570rpx !important;
+  height: 256rpx !important;
+  top: 35rpx;
+  padding: 20rpx 16rpx;
+}
+swiper-item image {
+  width: 69%;
+  height: 69%;
+  overflow: hidden;
+  border-radius: 16rpx 32rpx 16rpx 32rpx;
+  box-shadow: 0 4rpx 16rpx 0 rgba(38,37,40,0.24);
+}
+.swiper-item-active {
+  top: 0;
+}
+.swiper-item-active image{
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx 48rpx 16rpx 48rpx;
+  box-shadow: 0 4rpx 16rpx 0 rgba(38,37,40,0.48);
+}
+.swiper-item-before {
+  text-align: right;
+}
+
+.talk-container {
+  margin-top: 144rpx;
+}
+
+.talk-container .title {
+  font-weight: 500;
+  font-size: 60rpx;
+  margin-left: 32rpx;
+  display: inline-block;
+  margin-bottom: 32rpx;
+}
+
+.talk-container .en-title {
+  font-weight: bold;
+  position: relative;
+  top: 5rpx;
+  font-size: 44rpx;
+  color: #ffffff;
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "y-talkItem": "/components/talkItem/talkItem"
+  }
+}
