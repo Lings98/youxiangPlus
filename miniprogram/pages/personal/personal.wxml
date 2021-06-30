@@ -1,0 +1,25 @@
+<view>
+  <view class="top-block">
+    <view class="swiper-box">
+      <swiper bindchange="onChange">
+        <block wx:for="{{swiperImgUrls}}" wx:key="url">
+          <swiper-item>
+            <image class="swiper-img" src="{{item.url}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="indicator-box">
+        <text class="current">{{current + 1}}</text>
+        <text class="total">/{{swiperImgUrls.length}}</text>
+      </view>
+    </view>
+    <view class="personal-info">
+      <image class="portrait-img" src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <text class="name">德莱尼木有小徳</text>
+      <view class="support">
+        <image class="heart-icon" src="../../images/heart-icon.png"></image>
+        <text class="num">666</text>
+      </view>
+    </view>
+  </view>
+</view>

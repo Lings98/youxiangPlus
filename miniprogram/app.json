@@ -9,7 +9,8 @@
     "pages/uploadPic/uploadPic",
     "pages/myInteraction/myInteraction",
     "components/talkDetail/talkDetail",
-    "pages/talkDetail/talkDetail"
+    "pages/talkDetail/talkDetail",
+    "pages/personal/personal"
   ],
   "window": {
     "backgroundColor": "#f2f2f2",

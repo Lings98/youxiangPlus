@@ -1,8 +1,10 @@
 <view class="me-page">
   <view class="top-back">
     <text class="greet">Hi～</text>
-    <view class="name">德莱尼木有小徳</view>
-    <image class="portrait" src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    <navigator url="../../pages/personal/personal" class="name">德莱尼木有小徳</navigator >
+    <navigator url="../../pages/personal/personal">
+      <image class="portrait" src="../../images/portrait.png"></image>
+    </navigator>
     <view class="praise">
       <text class="num">888</text>
       <text class="label">获赞</text>

@@ -60,8 +60,8 @@
           "query": ""
         },
         {
-          "name": "pages/talk-detail/talk-detail",
-          "pathName": "pages/talk-detail/talk-detail",
+          "name": "pages/talkDetail/talkDetail",
+          "pathName": "pages/talkDetail/talkDetail",
           "query": "",
           "scene": null
         },
@@ -74,6 +74,13 @@
         {
           "name": "pages/aboutUs/aboutUs",
           "pathName": "pages/aboutUs/aboutUs",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
           "scene": null
         }
       ]

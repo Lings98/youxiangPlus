@@ -1,5 +1,6 @@
 .talk-detail-box {
   background-color: #ffffff;
+  /* margin-bottom: 30rpx; */
 }
 
 .talk-detail-box > image{

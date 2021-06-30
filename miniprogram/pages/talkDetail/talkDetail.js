@@ -7,7 +7,8 @@ Page({
   data: {
     nickName: '',
     avatarUrl: '',
-    isCanDraw: false
+    isCanDraw: false,
+    isIphoneX: false,
   },
 
   /**
@@ -16,7 +17,8 @@ Page({
   onLoad: function (options) {
     this.setData({
       nickName: wx.getStorageSync('nickName') || '',
-      avatarUrl: wx.getStorageSync('avatarUrl') || ''
+      avatarUrl: wx.getStorageSync('avatarUrl') || '',
+      isIphoneX: this.isIphoneX()
     })
   },
 
@@ -36,6 +38,15 @@ Page({
         avatarUrl: e.detail.userInfo.avatarUrl,
         isCanDraw: !this.data.isCanDraw
       })
+    }
+  },
+
+  isIphoneX() {
+    let info = wx.getSystemInfoSync();
+    if (/iPhone X/i.test(info.model)) {
+      return true;
+    } else {
+      return false;
     }
   },
 

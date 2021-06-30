@@ -25,7 +25,7 @@
     <y-interaction-item></y-interaction-item>
     <y-interaction-item></y-interaction-item>
   </view>
-  <view class="footer-fix">
+  <view class="footer-fix" style="padding-bottom:{{ isIphoneX ? 34 : 0 }}px;">
     <button class="btn-say" open-type="getUserInfo" bindgetuserinfo="getUserInfo">我想说</button>
     <view class="collection operation">
       <image src="../../images/collect-icon.png"></image>
