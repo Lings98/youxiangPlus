@@ -1,0 +1,75 @@
+.interaction-item-box {
+  width: 622rpx;
+  margin: 16rpx 32rpx;
+  padding: 32rpx 32rpx 16rpx;
+  background: #F7F7F7;
+  border-radius: 8rpx;
+}
+
+.bacic-info {
+  position: relative;
+}
+
+.bacic-info .portrait {
+  width: 48rpx;
+  height: 48rpx;
+}  
+
+.bacic-info .name {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #262528;
+  position: relative;
+  top: -15rpx;
+  margin-left: 16rpx;
+}
+
+.bacic-info .date {
+  display: inline-block;
+  font-size: 20rpx;
+  font-weight: 300;
+  color: #B8B8B8;
+  line-height: 48rpx;
+  position: absolute;
+  right: 32rpx;
+} 
+
+.content {
+  min-height: 96rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #262528;
+  line-height: 48rpx;
+  margin-top: 12rpx;
+}
+
+.more-info {
+  position: relative;
+}
+
+.more-info .item {
+  display: inline-block;
+}
+
+.more-info .support {
+  margin-left: 80rpx;
+}
+
+.more-info .more {
+  position: absolute;
+  right: 32rpx;
+}
+
+.more-info .icon {
+  width: 32rpx;
+  height: 32rpx;
+  position: relative;
+  top: 7rpx;
+}
+
+.more-info .text {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #8F8F8F;
+  line-height: 32rpx
+}

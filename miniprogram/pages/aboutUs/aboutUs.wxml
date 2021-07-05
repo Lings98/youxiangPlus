@@ -1,0 +1,9 @@
+<view class="aboutUs-page">
+  <image class="logo" src="../../images/logo.png"></image>
+  <text class="title">游享Plus</text>
+  <text class="operator">运营合作微信：SUGARXDOTA</text>
+  <view class="statement">
+    <text class="statement-title">免责声明</text>
+    <text class="statement-content">部分内容来源自互联网，如果涉及版权问题，请随时告知我们。</text>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="interaction-item-box">
+  <view class="bacic-info">
+    <image class="portrait" src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    <text class="name">Jontray Arnold</text>
+    <view class="date">2021年2月23日</view>
+  </view>
+  <view class="content">
+    用在大米和团本里面性质还是有点不一样，娱乐性一下就增强了。。
+  </view>
+  <view class="more-info">
+    <view class="reply item">
+      <image class="icon" src="../../images/reply-icon.png"></image>
+      <text class="text">回复</text>
+    </view>
+    <view class="support item">
+      <image class="icon" src="../../images/support-actived-icon.png"></image>
+      <text class="text">66</text>
+    </view>
+    <view class="more item">
+      <image class="icon" src="../../images/more-icon.png"></image>
+    </view>
+  </view>
+</view>

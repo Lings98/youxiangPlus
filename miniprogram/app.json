@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/talk/talk",
+    "pages/pic/pic",
+    "pages/me/me",
+    "pages/aboutUs/aboutUs",
+    "pages/myAttention/myAttention",
+    "pages/feedback/feedback",
+    "pages/uploadPic/uploadPic",
+    "pages/myInteraction/myInteraction",
+    "components/talkDetail/talkDetail",
+    "pages/talkDetail/talkDetail",
+    "pages/personal/personal"
+  ],
+  "window": {
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#262528",
+    "navigationBarTitleText": "游享Plus",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#B8B8B8",
+    "selectedColor": "#262528",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/talk/talk",
+        "text": "Talk",
+        "iconPath": "images/talk.png",
+        "selectedIconPath": "images/talk-actived.png"
+      },
+      {
+        "pagePath": "pages/pic/pic",
+        "text": "Pic",
+        "iconPath": "images/pic.png",
+        "selectedIconPath": "images/pic-actived.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

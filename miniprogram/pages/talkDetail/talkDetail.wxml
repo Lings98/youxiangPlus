@@ -1,0 +1,39 @@
+<view class="talk-detail-box">
+  <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+  <text class="title">你心目中前期宣传爆炸，后期拉垮的游戏有哪些？</text>
+  <view class="talk-info">
+    <view class="people-image-box">
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    </view>
+    <view class="text-box">
+      <text class="num">888</text>
+      <text>人参与</text>
+    </view>
+  </view>
+  <text class="detail">你心目中前期宣传爆炸，后期拉垮的游戏有哪些？你心目中前期宣传爆炸，后期拉垮的游戏有哪些？你心目中前期宣传爆炸，后期拉垮的游戏有哪些呢？</text>
+  <view class="topic-interaction">
+    <view>
+      <image src="../../images/symbol.png" class="symbol"></image>
+      <text class="title">话题互动</text>
+      <view class="hot switch active">热门</view>
+      <view class="newest switch">最新</view>
+    </view>
+    <y-interaction-item></y-interaction-item>
+    <y-interaction-item></y-interaction-item>
+  </view>
+  <view class="footer-fix" style="padding-bottom:{{ isIphoneX ? 34 : 0 }}px;">
+    <button class="btn-say" open-type="getUserInfo" bindgetuserinfo="getUserInfo">我想说</button>
+    <view class="collection operation">
+      <image src="../../images/collect-icon.png"></image>
+      <text>666</text>
+    </view>
+    <view class="share operation">
+      <image src="../../images/share-icon.png" ></image>
+    </view>
+    <y-share-box type="2d" isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" bind:close="handleClose"></y-share-box>
+  </view>  
+</view>

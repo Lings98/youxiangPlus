@@ -1,0 +1,21 @@
+<view class="me-page">
+  <view class="top-back">
+    <text class="greet">Hi～</text>
+    <navigator url="../../pages/personal/personal" class="name">德莱尼木有小徳</navigator >
+    <navigator url="../../pages/personal/personal">
+      <image class="portrait" src="../../images/portrait.png"></image>
+    </navigator>
+    <view class="praise">
+      <text class="num">888</text>
+      <text class="label">获赞</text>
+    </view>
+    <image class="edit" src="../../images/edit.png"></image>
+  </view>
+  <view class="cell-block">
+    <y-cellBox url="../../pages/myAttention/myAttention" img="../../images/attention-icon.png" text="我的关注"></y-cellBox>
+    <y-cellBox url="../../pages/myInteraction/myInteraction" img="../../images/interaction-icon.png" text="我的互动"></y-cellBox>
+    <y-cellBox url="../../pages/uploadPic/uploadPic" img="../../images/upload-icon.png" text="上传图片编辑"></y-cellBox>
+    <y-cellBox url="../../pages/feedback/feedback" img="../../images/feedback-icon.png" text="问题反馈"></y-cellBox>
+    <y-cellBox url="../../pages/aboutUs/aboutUs" img="../../images/about-icon.png" text="关于我们"></y-cellBox>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="top-block"></view>
+<swiper current="1" previous-margin="45" bindchange="onChange">
+  <block wx:for="{{swiperImgUrls}}" wx:key="url">
+    <swiper-item class="swiper-item{{current===item.index?'-active':''}}{{current-1===item.index?'-before':''}}">
+      <image src="{{item.url}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="talk-container">
+  <text class="title">话题</text> 
+  <text class="en-title">Talk</text>
+  <block wx:for="{{talkList}}" wx:key="index">
+    <y-talkItem talklist="{{item}}"></y-talkItem>
+  </block>
+</view>

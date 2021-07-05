@@ -1,0 +1,18 @@
+<view class="talkItem-box" bindtap="goDetail">
+  <image src="{{talklist.imgUrl}}"></image>
+  <text>{{talklist.title}}</text>
+  <view class="talk-info">
+    <view class="people-image-box">
+      <image src="{{talklist.imgUrl}}"></image>
+      <image src="{{talklist.imgUrl}}"></image>
+      <image src="{{talklist.imgUrl}}"></image>
+      <image src="{{talklist.imgUrl}}"></image>
+      <image src="{{talklist.imgUrl}}"></image>
+    </view>
+    <view class="text-box">
+      <text class="num">888</text>
+      <text>人参与</text>
+    </view>
+    <button></button>
+  </view>
+</view>

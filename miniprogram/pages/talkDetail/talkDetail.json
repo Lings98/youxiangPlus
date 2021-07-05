@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "y-interaction-item": "/components/interactionItem/interactionItem",
+    "y-share-box": "/components/shareBox/shareBox"
+  },
+  "navigationStyle": "custom"
+}
