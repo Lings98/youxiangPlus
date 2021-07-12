@@ -1,0 +1,16 @@
+<view class="personal-talk-item">
+  <view class="info-item">
+    <view class="content-title">
+      <image src="../../images/symbol.png"></image>
+      <text>话题互动</text>
+    </view>
+    <text class="date">3小时前</text>
+  </view>
+  <view class="title">不是吧我就是用的AirPodsPro，感觉没问题啊啊要么就是你用的不太习惯吧</view>
+  <view class="info-item">
+    <image class="talk-img" src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    <text class="detail-title">
+      荒野大镖客2里有哪些不为人知的彩蛋呢？
+    </text>
+  </view>
+</view>

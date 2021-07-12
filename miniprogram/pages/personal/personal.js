@@ -17,7 +17,20 @@ Page({
     {
       index: 2,
       url: 'http://p1.music.126.net/Yo-FjrJTQ9clkDkuUCTtUg==/109951164169441928.jpg',
-    }]
+    }],
+    switchIndex: 0,
+    switchList: [
+      {
+        index: 0,
+        text: '互动'
+      }, {
+        index: 1,
+        text: '关注'
+      }, {
+        index: 2,
+        text: '专辑'
+      }
+    ]
   },
 
   /**
@@ -81,5 +94,16 @@ Page({
     this.setData({
       current: index //修改current的值
     });
+  },
+
+ 
+  onSwitch: function(e) {
+    const index = e.target.dataset.index;
+    this.setData({
+      switchIndex: index //修改switchIndex的值
+    });
   }
+  
+
+  
 })

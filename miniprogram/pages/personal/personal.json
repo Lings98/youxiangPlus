@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "y-switch-item": "/components/switchItem/switchItem",
+    "y-personal-talk": "/components/personalTalk/personalTalk"
+  },
   "navigationStyle": "custom"
 }

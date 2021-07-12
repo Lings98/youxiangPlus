@@ -1,2 +1,43 @@
-<!--pages/pic/pic.wxml-->
-<text>pages/pic/pic.wxml</text>
+<view class="pics-page">
+  <view class="flex-box">
+    <view class="input-box">
+      <image class="search-icon" src="../../images/search-icon.png"></image>
+      <input class="input" placeholder="搜索关键词…"/>
+    </view>
+    <view class="want-box">
+      <swiper vertical autoplay interval="3000" style="height: 64rpx">
+        <block wx:for="{{wantList}}" wx:key="*this">
+          <swiper-item class="swiper-item">
+            <view class="swiper-item flex-box">
+              <view class="text-box">
+                <text class="desc">德莱尼木有小徳{{index}}  想要</text>
+                <text class="keyword">焦绿猫高清表情包</text>
+              </view>
+              <image class="portrait" src="../../images/portrait.png"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <image class="album-title" src="../../images/album-title.png"></image>
+  <scroll-view class="album-box" scroll-x>
+    <block wx:for="{{albumList}}" wx:key="*this">
+      <image class="album-item" mode="aspectFill" src="{{item.url}}"/>
+    </block>
+  </scroll-view>
+  <image class="img-title" src="../../images/pic-title.png"></image>
+  <view class="img-box">
+    <view class="img-left">
+      <block wx:for="{{leftPics}}" wx:key="*this">
+        <image class="img-item" mode="widthFix" src="{{item.url}}"/>
+      </block>
+    </view>
+    <view class="img-right">
+      <block wx:for="{{rightPics}}" wx:key="*this">
+        <image class="img-item" mode="widthFix" src="{{item.url}}"/>
+      </block>
+    </view>
+  </view>
+</view>
+    

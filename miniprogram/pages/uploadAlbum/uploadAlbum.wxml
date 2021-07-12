@@ -1,0 +1,47 @@
+<view class="upload-page">
+  <view class="mb-32">
+    <label class="label">上传图片</label>
+    <text class="num">{{pics.length}}/9</text>
+  </view>
+  <view class="upload-img">
+    <view class="pic-item" hidden="{{pics.length===9}}" bindtap="onChooseImage">
+      <image class="add-pic pic" mode="aspectFill" src="../../images/add-pic.png"></image>
+    </view>
+    <block wx:for="{{pics}}" wx:key="*this">
+      <view class="pic-item">
+        <image class="add-pic pic" mode="aspectFill" src="{{item}}" bindtap="prevPic" data-pic="{{item}}"></image>
+        <image class="delete-pic"  mode="aspectFill" src="../../images/trash-icon.png" bindtap="delPic" data-index="{{index}}"></image>
+      </view>
+    </block>
+  </view>
+  <view class="album-title">
+    <label class="label bold">专辑名称</label>
+    <input class="name" placeholder="输入专辑名称" maxlength="20" bindinput="onInput"></input>
+  </view>
+  <view>
+    <view class="mb-32">
+      <label class="label">添加关键词</label>
+      <image class="add-words" hidden="{{keyWords.length===5}}" bindtap="addWord" src="../../images/add-words.png"></image>
+    </view>
+    <view>
+      <block wx:for="{{keyWords}}" wx:key="*this">
+        <view class="words-item">
+          <text>{{item}}</text> 
+          <image class="delete-word" bindtap="delWord" src="../../images/delete-icon.png"></image>
+        </view>
+      </block>
+      <text class="num" wx:if="{{keyWords.length}}">{{keyWords.length}}/5</text>
+    </view>
+  </view>
+  <view class="copyright">
+    <label class="label bold">版权说明</label>
+    <image class="explain-icon" src="../../images/explain-icon.png"></image>
+    <image class="arrow-right" src="../../images/arrow-right-icon.png"></image>
+  </view>
+  <view class="btn-block">
+    <y-button class="btn" bindtap="onRelease">发布</y-button>
+  </view>
+  <modal hidden="{{hiddenmodalput}}" title="请输入关键词" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+    <input type='text' placeholder="请输入关键词" bindinput="keyInput" value="{{keyWord}}" maxlength="20" focus/>
+  </modal>
+</view>

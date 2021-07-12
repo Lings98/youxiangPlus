@@ -1,0 +1,52 @@
+.personal-talk-item {
+  padding: 40rpx 32rpx;
+}
+
+.content-title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #7C40EC;
+  line-height: 48rpx;
+  flex: 1;
+}
+
+.content-title image{
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.info-item {
+  display: flex;
+}
+
+.title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #272629;
+  line-height: 48rpx;
+  margin-top: 16rpx;
+  margin-bottom: 32rpx;
+}
+
+.date {
+  font-size: 20rpx;
+  font-weight: 300;
+  color: #B8B8B8;
+  line-height: 48rpx;
+}
+
+.talk-img {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 8rpx;
+  display: block;
+  margin-right: 32rpx;
+}
+
+.detail-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #8F8F8F;
+  line-height: 48rpx;
+  margin-top: -50rpx;
+}

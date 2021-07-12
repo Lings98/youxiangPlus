@@ -1,0 +1,56 @@
+.edit-me-page {
+  text-align: center;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.image-box {
+  display: inline-block;
+  width: 256rpx;
+  height: 256rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 32rpx;
+}
+
+.image-box .portrait {
+  width: 256rpx;
+  height: 256rpx;
+}
+
+.image-box .upload {
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 39rpx;
+  width: 240rpx;
+  height: 48rpx;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+}
+
+.input-box {
+  margin: 30rpx auto;
+  width: 462rpx;
+  height: 96rpx;
+  background: #F7F7F7;
+  border-radius: 56rpx;
+  position: relative;
+}
+
+.input {
+  height: 100%;
+  padding-right: 100rpx;
+}
+
+.num {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #DFDEE0;
+  line-height: 32rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 32rpx;
+}

@@ -1,0 +1,10 @@
+<view class="edit-me-page">
+  <view class="image-box">
+    <image class="portrait" src="{{userInfo.portrait || userInfo.avatarUrl}}" mode="aspectFill"></image>
+    <view class="upload" bindtap="uploadpPortrait">重新上传</view>
+  </view>
+  <view class="input-box">
+    <input class="input" maxlength="7" value="{{userInfo.name || userInfo.nickName}}" bindblur="eidtName"/>
+    <text class="num">7/7</text>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/talkDetail/talkDetail",
+          "pathName": "pages/talkDetail/talkDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/aboutUs/aboutUs",
+          "pathName": "pages/aboutUs/aboutUs",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/uploadAlbum/uploadAlbum",
+          "pathName": "pages/uploadAlbum/uploadAlbum",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/editMe/editMe",
+          "pathName": "pages/editMe/editMe",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pic/pic",
+          "pathName": "pages/pic/pic",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

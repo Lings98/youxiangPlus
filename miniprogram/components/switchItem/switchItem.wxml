@@ -1,0 +1,3 @@
+<view class="switch-item {{isActived ? 'actived' : ''}}" style="width: {{width}}rpx">
+  <slot></slot>
+</view>

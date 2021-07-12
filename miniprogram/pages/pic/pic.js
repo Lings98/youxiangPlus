@@ -1,20 +1,61 @@
 // pages/pic/pic.js
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    list: [],
+    albumList: [],
+    leftPics: [],
+    rightPics: [],
+    wantList: [{}, {}, {}, {}, {}]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getAlbum(); 
   },
 
+  getAlbum (start = 0) {
+    wx.showLoading({
+      title: '加载中'
+    })
+    wx.cloud.callFunction({
+      name: 'album',
+      data: {
+        start,
+        count: 5,
+        $url: 'albumList'
+      }
+    }).then((res) => {
+      let result = res.result.data
+      let picsList = []
+      let albumList = []
+      result.forEach(item1 => {
+        item1.pics = item1.pics.map((item2) => {
+          return {
+            id: item1._id,
+            url: item2
+          }
+        })
+        picsList = picsList.concat(item1.pics)
+        albumList = albumList.concat([item1.pics[0]])
+      })
+      !start && this.setData({
+        albumList: albumList.slice(0, 5)
+      })
+      this.setData({
+        list: this.data.list.concat(result),
+        leftPics: this.data.leftPics.concat(picsList.filter((item, index) => index % 2 !== 0)),
+        rightPics: this.data.rightPics.concat(picsList.filter((item, index) => index % 2 === 0))
+      })
+      wx.hideLoading()
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -47,14 +88,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    this.getAlbum(this.data.list.length)
   },
 
   /**

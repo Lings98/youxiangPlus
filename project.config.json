@@ -82,6 +82,17 @@
           "pathName": "pages/personal/personal",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/uploadAlbum/uploadAlbum",
+          "pathName": "pages/uploadAlbum/uploadAlbum",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/editMe/editMe",
+          "pathName": "pages/editMe/editMe",
+          "scene": null
         }
       ]
     }

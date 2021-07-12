@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "y-button": "/components/button/button"
+  },
+  "navigationBarTitleText": "上传图片专辑",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black"
+}

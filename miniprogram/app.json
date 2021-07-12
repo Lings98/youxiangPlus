@@ -10,7 +10,9 @@
     "pages/myInteraction/myInteraction",
     "components/talkDetail/talkDetail",
     "pages/talkDetail/talkDetail",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/uploadAlbum/uploadAlbum",
+    "pages/editMe/editMe"
   ],
   "window": {
     "backgroundColor": "#f2f2f2",

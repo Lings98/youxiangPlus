@@ -1,3 +1,8 @@
+.personal-page {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
 .top-block {
   position: relative;
 }
@@ -74,4 +79,12 @@ swiper {
   font-weight: bold;
   color: #B8B8B8;
   line-height: 32rpx;
+}
+
+.content-switch-box {
+  padding: 96rpx 32rpx 0;
+}
+
+.content-switch-box .item {
+  width: 200rpx;
 }
