@@ -5,10 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    nickName: '',
-    avatarUrl: '',
-    isCanDraw: false,
-    isIphoneX: false,
+    actionSheetHidden: true,
+    commentHidden: true
   },
 
   /**
@@ -22,25 +20,6 @@ Page({
     })
   },
 
-  handleClose() {
-    this.setData({
-      isCanDraw: !this.data.isCanDraw
-    })
-  },
-
-  getUserInfo(e) {
-    console.log(e.detail)
-    if (e.detail.errMsg === 'getUserInfo:ok') {
-      wx.setStorageSync('avatarUrl', e.detail.userInfo.avatarUrl)
-      wx.setStorageSync('nickName', e.detail.userInfo.nickName)
-      this.setData({
-        nickName: e.detail.userInfo.nickName,
-        avatarUrl: e.detail.userInfo.avatarUrl,
-        isCanDraw: !this.data.isCanDraw
-      })
-    }
-  },
-
   isIphoneX() {
     let info = wx.getSystemInfoSync();
     if (/iPhone X/i.test(info.model)) {
@@ -48,6 +27,18 @@ Page({
     } else {
       return false;
     }
+  },
+
+  onShare(){
+    this.setData({
+      actionSheetHidden: false
+    })
+  },
+
+  onComment(){
+    this.setData({
+      commentHidden: false
+    })
   },
 
   /**

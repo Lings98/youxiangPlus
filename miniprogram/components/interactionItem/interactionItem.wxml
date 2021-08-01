@@ -1,4 +1,4 @@
-<view class="interaction-item-box">
+<view class="interaction-item-box" style="background-color: {{bg}}">
   <view class="bacic-info">
     <image class="portrait" src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
     <text class="name">Jontray Arnold</text>

@@ -1,6 +1,4 @@
 .upload-page {
-  background-color: #ffffff;
-  height: 100vh;
   padding: 48rpx 48rpx;
 }
 
@@ -114,4 +112,14 @@
 
 .btn-block {
   margin-top: 88rpx;
+}
+
+.router-wrapper {
+  display: inline-block;
+}
+
+.picker-result {
+  color: #666666;
+  float: right;
+  margin-right: 10rpx;
 }

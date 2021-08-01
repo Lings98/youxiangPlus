@@ -1,0 +1,57 @@
+.concern-box {
+  padding: 0 32rpx;
+  margin-bottom: 10rpx;
+  padding-top: 30rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box {
+  width: 176rpx;
+  height: 176rpx;
+  float: left;
+}
+
+.info-box {
+  margin-left: 208rpx;
+}
+
+.concern-people {
+  font-size: 20rpx;
+  font-weight: 300;
+  color: #B8B8B8;
+  line-height: 32rpx;
+  position: absolute;
+  bottom: 0;
+  left: 240rpx;
+}
+
+.type {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #B8B8B8;
+  line-height: 32rpx;
+  position: absolute;
+  right: 32rpx;
+  bottom: 0;
+}
+
+.name {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #262528;
+  line-height: 48rpx;
+}
+
+.image-box image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+.type image {
+  width: 32rpx;
+  height: 32rpx;
+  position: relative;
+  top: 6rpx;
+}

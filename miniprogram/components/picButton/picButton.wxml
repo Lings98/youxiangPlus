@@ -1,0 +1,16 @@
+<view class="pic-bottom-box" style="padding-bottom:{{ isIphoneX ? 34 : 10 }}px;">
+  <view class="btn" bindtap="onComment">
+    说点什么吧
+  </view>
+  <view class="edit-box" bindtap="onEdit" wx:if="{{!isPic}}">
+    <image src="../../images/edit-icon.png"></image>
+    <text>编辑</text>
+  </view>
+  <view class="thumb-box" wx:if="{{isPic}}">
+    <image src="../../images/heart-pic-icon.png"></image>
+    <text>201</text>
+  </view>
+  <view class="share-box" bindtap="openAction">
+    <image src="../../images/share-icon.png"></image>
+  </view>
+</view>

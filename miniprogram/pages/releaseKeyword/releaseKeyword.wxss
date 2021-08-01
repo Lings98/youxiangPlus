@@ -1,0 +1,46 @@
+.release-keyword-page {
+  text-align: center;
+}
+.text {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #262528;
+  line-height: 48rpx;
+}
+
+.want {
+  padding-top: 320rpx;
+  margin-bottom: 48rpx;
+}
+
+.input-box {
+  width: 462rpx;
+  height: 96rpx;
+  background: #F7F7F7;
+  border-radius: 56rpx;
+  margin: 0 auto 48rpx;
+}
+
+.input-box input {
+  float: left;
+  height: 100%;
+}
+
+.num {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #DFDEE0;
+  line-height: 32rpx;
+  float: right;
+  margin-right: 32rpx;
+  line-height: 96rpx;
+}
+
+.btn-block {
+  position: absolute;
+  bottom: 56rpx;
+  left: 0;
+  right: 0;
+  padding: 0 48rpx;
+}
+

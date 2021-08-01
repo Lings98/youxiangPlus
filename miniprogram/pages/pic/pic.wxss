@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.input-box input {
+  color: #ffffff;
+}
+
 .want-box {
   height: 64rpx;
   flex: 1;
@@ -113,4 +117,28 @@
 .img-item {
   width: 320rpx;
   margin-bottom: 24rpx;
+}
+
+.no-search-box {
+  /* background-color: #F2F2F2; */
+  text-align: center;
+}
+
+.no-search-box image {
+  margin-top: 80rpx;
+  margin-bottom: 16rpx;
+  width: 238rpx;
+  height: 238rpx;
+}
+
+.no-search-box .text{
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #666666;
+  line-height: 48rpx;
+} 
+
+.no-search-box .btn-block{
+  width: 320rpx;
+  margin: 64rpx auto 29rpx;
 }

@@ -1,0 +1,8 @@
+<view class="success-page">
+  <image class="success-img" src="../../images/success.png"></image>
+  <strong class="success-text">{{text}}成功</strong>
+  <text class="success-tip">请等待审核结果</text>
+  <view class="button-block">
+    <y-button>完  成</y-button>
+  </view>
+</view>

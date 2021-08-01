@@ -1,7 +1,7 @@
 <view class="personal-page">
   <view class="top-block">
     <view class="swiper-box">
-      <swiper bindchange="onChange">
+      <swiper bindchange="onChange" autoplay="3000">
         <block wx:for="{{swiperImgUrls}}" wx:key="url">
           <swiper-item>
             <image class="swiper-img" src="{{item.url}}"></image>
@@ -23,9 +23,19 @@
     </view>
   </view>
   <view class="content-switch-box">
-    <y-switch-item class="item"data-index="{{item.index}}" bindtap="onSwitch" isActived="{{item.index === switchIndex}}" wx:for="{{switchList}}" wx:key="index">{{item.text}}</y-switch-item>
+    <y-switch-item class="item" data-index="{{item.index}}" bindtap="onSwitch" isActived="{{item.index === switchIndex}}" wx:for="{{switchList}}" wx:key="index">{{item.text}}</y-switch-item>
   </view>
-  <view>
+  <view wx:if="{{switchIndex === 0}}">
     <y-personal-talk></y-personal-talk>
+  </view>
+  <view wx:if="{{switchIndex === 1}}">
+    <y-concern-talk></y-concern-talk>
+    <y-personal-album></y-personal-album>
+  </view>
+  <view wx:if="{{switchIndex === 2}}">
+    <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+      <y-personal-album></y-personal-album>
+    </mp-slideview>
+    <y-personal-album></y-personal-album>
   </view>
 </view>

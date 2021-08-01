@@ -2,7 +2,7 @@
   <view class="flex-box">
     <view class="input-box">
       <image class="search-icon" src="../../images/search-icon.png"></image>
-      <input class="input" placeholder="搜索关键词…"/>
+      <input class="input" value="{{searchVal}}" placeholder="搜索关键词…" bindtap="onSearch"/>
     </view>
     <view class="want-box">
       <swiper vertical autoplay interval="3000" style="height: 64rpx">
@@ -20,17 +20,24 @@
       </swiper>
     </view>
   </view>
+  <view wx:if="{{searchVal}}" class="no-search-box">
+    <image src="../../images/no-search.png"></image>
+    <view class="text">暂无该关键词图片</view>
+    <view class="btn-block">
+      <y-button bindtap="onRelease">去发布关键词</y-button>
+    </view>
+  </view>
   <image class="album-title" src="../../images/album-title.png"></image>
   <scroll-view class="album-box" scroll-x>
     <block wx:for="{{albumList}}" wx:key="*this">
-      <image class="album-item" mode="aspectFill" src="{{item.url}}"/>
+      <image class="album-item" mode="aspectFill" src="{{item.url}}" bindtap="goAlbum"/>
     </block>
   </scroll-view>
   <image class="img-title" src="../../images/pic-title.png"></image>
   <view class="img-box">
     <view class="img-left">
       <block wx:for="{{leftPics}}" wx:key="*this">
-        <image class="img-item" mode="widthFix" src="{{item.url}}"/>
+        <image class="img-item" mode="widthFix" src="{{item.url}}" bindtap="goPic"/>
       </block>
     </view>
     <view class="img-right">

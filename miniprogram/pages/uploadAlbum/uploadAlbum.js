@@ -13,7 +13,8 @@ Page({
     pics: [], 
     keyWords: [],
     keyWord: '',
-    hiddenmodalput: true 
+    hiddenmodalput: true ,
+    array: ['无版权资源', '转载资源', '原创作品']
   },
 
   /**
@@ -26,6 +27,12 @@ Page({
       }
     })
     userInfo = options
+  },
+
+  bindPickerChange (e) {
+    this.setData({
+      index: e.detail.value
+    })
   },
 
   onInput (event) {

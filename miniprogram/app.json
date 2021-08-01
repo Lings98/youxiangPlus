@@ -6,13 +6,19 @@
     "pages/aboutUs/aboutUs",
     "pages/myAttention/myAttention",
     "pages/feedback/feedback",
-    "pages/uploadPic/uploadPic",
     "pages/myInteraction/myInteraction",
     "components/talkDetail/talkDetail",
     "pages/talkDetail/talkDetail",
     "pages/personal/personal",
     "pages/uploadAlbum/uploadAlbum",
-    "pages/editMe/editMe"
+    "pages/editMe/editMe",
+    "pages/copyRight/copyRight",
+    "pages/success/success",
+    "pages/uploadAlbumList/uploadAlbumList",
+    "pages/picDetail/picDetail",
+    "pages/searchPic/searchPic",
+    "pages/albumDetail/albumDetail",
+    "pages/releaseKeyword/releaseKeyword"
   ],
   "window": {
     "backgroundColor": "#f2f2f2",
@@ -47,5 +53,8 @@
     ]
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

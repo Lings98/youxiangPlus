@@ -34,79 +34,78 @@ Component({
       })
       this.setData({
         imgDraw: {
-          width: '750rpx',
-          height: '1334rpx',
-          background: 'https://qiniu-image.qtshe.com/20190506share-bg.png',
+          width: '480rpx',
+          height: '880rpx',
+          background: '#ffffff',
+          position: 'relative',
           views: [
             {
               type: 'image',
-              url: 'https://qiniu-image.qtshe.com/1560248372315_467.jpg',
+              url: '../../images/logo.png',
               css: {
-                top: '32rpx',
-                left: '30rpx',
-                right: '32rpx',
-                width: '688rpx',
-                height: '420rpx',
-                borderRadius: '16rpx'
+                top: 0,
+                left: 0,
+                right: 0,
+                width: '100%',
+                height: '400rpx',
+                borderRadius: '0px 0px 0px 32px'
               },
             },
             {
-              type: 'image',
-              url: wx.getStorageSync('avatarUrl') || 'https://qiniu-image.qtshe.com/default-avatar20170707.png',
-              css: {
-                top: '404rpx',
-                left: '328rpx',
-                width: '96rpx',
-                height: '96rpx',
-                borderWidth: '6rpx',
-                borderColor: '#FFF',
-                borderRadius: '96rpx'
-              }
-            },
-            {
               type: 'text',
-              text: wx.getStorageSync('nickName') || '青团子',
+              text: `你心目中前期宣传爆炸，后期拉垮\n的游戏有哪些？`,
               css: {
-                top: '532rpx',
+                top: '480rpx',
+                left: '32rpx',
+                lineHeight: '40rpx',
+                fontWeight: '500',
                 fontSize: '28rpx',
-                left: '375rpx',
-                align: 'center',
-                color: '#3c3c3c'
+                color: '#262528'
               }
             },
             {
               type: 'text',
-              text: `邀请您参与助力活动`,
+              text: `你心目中前期宣传爆炸，后期拉垮的游戏有哪\n些？你心目中前期宣传爆炸，后期拉垮的游戏有\n哪些？你心目中前期宣传爆炸，后期拉垮的游戏\n有哪些呢？`,
               css: {
                 top: '576rpx',
-                left: '375rpx',
-                align: 'center',
-                fontSize: '28rpx',
-                color: '#3c3c3c'
+                left: '32rpx',
+                lineHeight: '32rpx',
+                fontWeight: '300',
+                fontSize: '20rpx',
+                color: '#A3A3A3'
               }
             },
             {
               type: 'text',
-              text: `宇宙最萌蓝牙耳机测评员`,
+              text: `游享Plus`,
               css: {
-                top: '644rpx',
-                left: '375rpx',
-                maxLines: 1,
-                align: 'center',
-                fontWeight: 'bold',
-                fontSize: '44rpx',
-                color: '#3c3c3c'
+                top: '752rpx',
+                left: '32rpx',
+                fontWeight: '500',
+                fontSize: '40rpx',
+                color: 'rgba(38, 37, 40, 0.16)'
+              }
+            },
+            {
+              type: 'text',
+              text: `长按识别小程序码 参与互动`,
+              css: {
+                top: '816rpx',
+                left: '32rpx',
+                fontWeight: '500',
+                fontSize: '20rpx',
+                color: '#A3A3A3'
               }
             },
             {
               type: 'image',
-              url: 'https://qiniu-image.qtshe.com/20190605index.jpg',
+              url: '../../images/code.png',
               css: {
-                top: '834rpx',
-                left: '470rpx',
-                width: '200rpx',
-                height: '200rpx'
-              }
+                top: '752rpx',
+                right: '32rpx',
+                width: '96rpx',
+                height: '96rpx',
+              },
             }
           ]
         }

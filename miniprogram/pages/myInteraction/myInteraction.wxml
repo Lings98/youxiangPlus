@@ -1,2 +1,4 @@
-<!--miniprogram/pages/myInteraction/myInteraction.wxml-->
-<text>miniprogram/pages/myInteraction/myInteraction.wxml</text>
+<view class="myInteraction-page w-page page">
+  <y-personal-talk></y-personal-talk>
+  <y-personal-talk></y-personal-talk>
+</view>

@@ -1,0 +1,36 @@
+<view class="search-page">
+  <view class="search-top" style='height: {{height}}px;'>
+    <image class="btn-back" src="../../images/back-icon.png" bindtap="goBack"></image>
+    <view class="search-box">
+      <image src="../../images/search-icon.png"></image>
+      <input auto-focus placeholder="搜索关键词…" bindblur="searchVal"/>
+    </view>
+  </view>
+  <view class="search-item">
+    <view class="title">
+      搜索历史
+      <image src="../../images/trash-grey-icon.png"></image>
+    </view>
+    <ul>
+      <li>Dota2</li>
+      <li>吾乃闪耀的芝士蛋挞</li>
+      <li>拉席克</li>
+      <li>拉比克</li>
+      <li>肉山</li>
+      <li>大魔导师</li>
+      <li>卡尔</li>
+    </ul>
+  </view>
+  <view class="search-item">
+    <view class="title">热门标签</view>
+    <ul>
+      <li>Dota2</li>
+      <li>吾乃闪耀的芝士蛋挞</li>
+      <li>拉席克</li>
+      <li>拉比克</li>
+      <li>肉山</li>
+      <li>大魔导师</li>
+      <li>卡尔</li>
+    </ul>
+  </view>
+</view>

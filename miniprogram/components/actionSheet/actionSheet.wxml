@@ -1,0 +1,12 @@
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet">
+  <action-sheet-item> 
+    <button class="action-btn" open-type="share" >分享给好友</button> 
+  </action-sheet-item>
+
+  <action-sheet-item>
+    <button class="action-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">生成分享海报</button>
+  </action-sheet-item>
+  <!--自动隐藏action-sheet-->
+  <action-sheet-cancel>取消</action-sheet-cancel>
+  <y-share-box type="2d" isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" bind:close="handleClose"></y-share-box>
+</action-sheet>

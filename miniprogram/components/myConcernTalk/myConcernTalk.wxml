@@ -1,0 +1,13 @@
+<view class="concern-box">
+  <view class="image-box">
+    <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+  </view>
+  <view class="info-box">
+    <view class="name">你心目中前期宣传爆炸，后期拉垮的游戏有哪些？</view>
+    <view class="concern-people">21人关注</view>
+    <view class="type">
+      <image src="../../images/symbol-grey.png"></image>
+      话题
+    </view>
+  </view>
+</view>

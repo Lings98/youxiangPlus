@@ -1,0 +1,9 @@
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet">
+  <view class="comment-box">
+    <view class="btn-block">
+      <text bindtap="onClose">取消</text>
+      <text class="publish {{commentVal?'active':''}}">发表</text>
+    </view>
+    <textarea bindinput="bindTextAreaBlur" auto-height placeholder="写下你想说的话…" />
+  </view>
+</action-sheet>

@@ -16,24 +16,20 @@
   </view>
   <text class="detail">你心目中前期宣传爆炸，后期拉垮的游戏有哪些？你心目中前期宣传爆炸，后期拉垮的游戏有哪些？你心目中前期宣传爆炸，后期拉垮的游戏有哪些呢？</text>
   <view class="topic-interaction">
-    <view>
-      <image src="../../images/symbol.png" class="symbol"></image>
-      <text class="title">话题互动</text>
-      <view class="hot switch active">热门</view>
-      <view class="newest switch">最新</view>
-    </view>
+    <y-interaction-top title="壁纸评论" icon="comment" bg="#F7F7F7"></y-interaction-top>
     <y-interaction-item></y-interaction-item>
     <y-interaction-item></y-interaction-item>
   </view>
   <view class="footer-fix" style="padding-bottom:{{ isIphoneX ? 34 : 0 }}px;">
-    <button class="btn-say" open-type="getUserInfo" bindgetuserinfo="getUserInfo">我想说</button>
+    <button class="btn-say" bindtap="onComment">我想说</button>
     <view class="collection operation">
       <image src="../../images/collect-icon.png"></image>
       <text>666</text>
     </view>
-    <view class="share operation">
+    <view class="share operation" bindtap="onShare">
       <image src="../../images/share-icon.png" ></image>
     </view>
-    <y-share-box type="2d" isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" bind:close="handleClose"></y-share-box>
-  </view>  
+  </view>
+  <y-action-sheet actionSheetHidden="{{actionSheetHidden}}"></y-action-sheet>
+  <y-comment actionSheetHidden="{{commentHidden}}"></y-comment>
 </view>

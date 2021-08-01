@@ -1,0 +1,11 @@
+<view class="release-keyword-page w-page page">
+  <view class="text want">我像要</view>
+  <view class="input-box">
+    <input value="{{keyword}}" maxlength="7" bindinput="onInput"/>
+    <text class="num">{{keyword.length}}/7</text>
+  </view>
+  <view class="text">图片</view>
+  <view class="btn-block">
+    <y-button bindtap="onRelease">发 布</y-button>
+  </view>
+</view>

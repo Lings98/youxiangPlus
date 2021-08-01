@@ -1,2 +1,8 @@
-<!--miniprogram/pages/myAttention/myAttention.wxml-->
-<text>miniprogram/pages/myAttention/myAttention.wxml</text>
+<view class="myAttention-page w-page page">
+  <y-concern-talk></y-concern-talk>
+  <y-personal-album></y-personal-album>
+  <y-personal-album></y-personal-album>
+  <y-concern-talk></y-concern-talk>
+  <y-concern-talk></y-concern-talk>
+  <y-concern-talk></y-concern-talk>
+</view>

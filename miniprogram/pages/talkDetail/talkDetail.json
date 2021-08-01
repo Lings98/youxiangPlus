@@ -1,7 +1,9 @@
 {
   "usingComponents": {
     "y-interaction-item": "/components/interactionItem/interactionItem",
-    "y-share-box": "/components/shareBox/shareBox"
+    "y-interaction-top": "/components/interactionTop/interactionTop",
+    "y-action-sheet": "/components/actionSheet/actionSheet",
+    "y-comment": "/components/comment/comment"
   },
   "navigationStyle": "custom"
 }

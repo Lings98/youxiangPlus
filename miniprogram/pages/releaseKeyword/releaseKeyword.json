@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "y-button": "/components/button/button"
+  },
+  "navigationBarTitleText": "图片关键词发布",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black"
+}

@@ -1,0 +1,6 @@
+<view class="interaction-top-box">
+  <image src="../../images/{{icon}}.png" class="symbol"></image>
+  <text class="title">{{title}}</text>
+  <view class="hot switch active">热门</view>
+  <view class="newest switch">最新</view>
+</view>

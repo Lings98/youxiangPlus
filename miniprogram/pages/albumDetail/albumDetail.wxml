@@ -1,0 +1,36 @@
+<view class="ablum-detail-page page w-page">
+  <view class="swiper-box">
+    <swiper bindchange="onChange" current="{{current}}">
+      <block wx:for="{{swiperImgUrls}}" wx:key="url">
+        <swiper-item>
+          <image class="swiper-img" mode="scaleToFill" src="{{item.url}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="indicator-box">
+      <block wx:for="{{swiperImgUrls}}" wx:key="url">
+        <image class="indicator-img {{current === item.index ? 'active': ''}}" src="{{item.url}}" data-index="{{item.index}}" bindtap="onSwitch"></image>
+      </block>
+    </view>
+  </view>
+  <view class="personal-box">
+    <image src="http://p1.music.126.net/oeH9rlBAj3UNkhOmfog8Hw==/109951164169407335.jpg"></image>
+    <view class="info-box">
+      <view class="name">德莱尼木有小徳</view>
+      <ul>
+        <li>dota2</li>
+        <li>拉比克</li>
+        <li>大魔导师</li>
+        <li>卡尔</li>
+        <li>拉席克</li>
+      </ul>
+    </view>
+  </view>
+  <view class="interaction-box">
+    <y-interaction-top title="壁纸评论" icon="comment"></y-interaction-top>
+    <y-interaction-item></y-interaction-item>
+    <y-interaction-item></y-interaction-item>
+  </view>
+  <y-pic-bottom bindonOpen="onOpen" isIphoneX="{{isIphoneX}}"></y-pic-bottom>
+  <y-comment actionSheetHidden="{{commentHidden}}"></y-comment>
+</view>

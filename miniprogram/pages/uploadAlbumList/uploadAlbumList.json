@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-personal-album": "/components/personalAlbum/personalAlbum",
+    "y-button": "/components/button/button"
+  }
+}

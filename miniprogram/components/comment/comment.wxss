@@ -1,0 +1,20 @@
+.comment-box {
+  padding: 32rpx;
+}
+.btn-block {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #CCCCCC;
+  line-height: 48rpx;
+}
+.publish {
+  float: right;
+}
+
+.publish.active {
+  color: #7C40EC;
+}
+
+textarea {
+  margin-top: 30rpx;
+}

@@ -1,0 +1,20 @@
+<view class="album-list-page w-page page">
+  <view class="switch-box">
+    <block wx:for="{{switchList}}" wx:key="*this">
+     <view class="switch-item {{activeIndex === item.index ? 'actived' : ''}}" data-index="{{item.index}}" bindtap="switchTap">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="list-box">
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+    <y-personal-album is-review></y-personal-album>
+  </view>
+  <view class="btn-block">
+    <y-button class="btn" bindtap="onUpload">上传</y-button>
+  </view>
+</view>

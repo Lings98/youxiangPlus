@@ -10,13 +10,21 @@ Page({
     albumList: [],
     leftPics: [],
     rightPics: [],
-    wantList: [{}, {}, {}, {}, {}]
+    wantList: [{}, {}, {}, {}, {}],
+    searchVal: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('2121',options)
+    if (options.search) {
+      this.setData({
+        searchVal: options.search
+      })
+    }
+    
     this.getAlbum(); 
   },
 
@@ -54,6 +62,30 @@ Page({
         rightPics: this.data.rightPics.concat(picsList.filter((item, index) => index % 2 === 0))
       })
       wx.hideLoading()
+    })
+  },
+
+  onSearch() {
+    wx.navigateTo({
+      url: `../../pages/searchPic/searchPic`,
+    })
+  },
+
+  onRelease() {
+    const keyword = this.data.searchVal
+    wx.navigateTo({
+      url: `../../pages/releaseKeyword/releaseKeyword?keyword=${keyword}`,
+    })
+  },
+  goAlbum(){
+    wx.navigateTo({
+      url: `../../pages/albumDetail/albumDetail`
+    })
+  },
+
+  goPic() {
+    wx.navigateTo({
+      url: `../../pages/picDetail/picDetail`
     })
   },
   /**

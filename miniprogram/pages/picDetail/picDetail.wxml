@@ -1,0 +1,19 @@
+<view class="pic-detail-page w-page page">
+  <image class="top-pic" src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg" bindtap="previewImg"></image>
+  <view class="ablum-info">
+    <view class="ablum-title">
+      <image src="../../images/star-icon.png"></image>
+      <text>所属专辑</text>
+    </view>
+    <view class="title">终物语系列</view>
+    <view class="concern">56人关注</view>
+    <view class="img-box">
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    </view>
+  </view>
+  <y-interaction-top title="壁纸评论" icon="comment"></y-interaction-top>
+  <y-pic-bottom bindonOpen="onOpen" isPic="{{isPic}}" isIphoneX="{{isIphoneX}}"></y-pic-bottom>
+  <y-comment actionSheetHidden="{{commentHidden}}"></y-comment>
+</view>

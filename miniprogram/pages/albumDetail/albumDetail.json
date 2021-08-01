@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "y-pic-bottom": "/components/picButton/picButton",
+    "y-interaction-item": "/components/interactionItem/interactionItem",
+    "y-interaction-top": "/components/interactionTop/interactionTop",
+    "y-comment": "/components/comment/comment"
+  },
+  "navigationStyle": "custom"
+}

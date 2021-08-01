@@ -1,0 +1,45 @@
+.switch-box {
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  padding-top: 32rpx;
+  width: 100%;
+  text-align: center;
+}
+.switch-item {
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #B8B8B8;
+  line-height: 48rpx;
+  display: inline-block;
+  margin: 0 74rpx;
+  position: relative;
+}
+.switch-item.actived {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #262528;
+}
+.switch-item.actived:after {
+  content: '';
+  position: absolute;
+  bottom: -4rpx;
+  left: 40%;
+  width: 16rpx;
+  height: 4rpx;
+  background: #7C40EC;
+}
+.list-box {
+  margin-top: 85rpx;
+  margin-bottom: 120rpx;
+}
+
+.btn-block {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 32rpx;
+  padding: 0 48rpx;
+}

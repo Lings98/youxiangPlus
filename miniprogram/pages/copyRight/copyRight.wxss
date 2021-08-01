@@ -1,0 +1,50 @@
+.copyRight-notice-page {
+  padding: 32rpx 32rpx 100rpx;
+}
+
+.classify-label {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #666666;
+  line-height: 48rpx;
+}
+
+.classify-item {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #262528;
+  line-height: 48rpx;
+  margin-top: 16rpx;
+}
+
+.content-box {
+  margin-top: 48rpx;
+}
+
+.content-title {
+  display: block;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #262528;
+  line-height: 48rpx;
+  margin-bottom: 32rpx;
+}
+
+.content-paragraph {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #666666;
+  line-height: 48rpx;
+}
+
+.mb-50 {
+  margin-bottom: 50rpx;
+}
+
+.tip {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #262528;
+  line-height: 48rpx;
+  margin-top: 16rpx;
+}

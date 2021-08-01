@@ -1,7 +1,10 @@
 {
   "usingComponents": {
     "y-switch-item": "/components/switchItem/switchItem",
-    "y-personal-talk": "/components/personalTalk/personalTalk"
+    "y-personal-talk": "/components/personalTalk/personalTalk",
+    "y-personal-album": "/components/personalAlbum/personalAlbum",
+    "y-concern-talk": "/components/myConcernTalk/myConcernTalk",
+    "mp-slideview": "weui-miniprogram/slideview/slideview"
   },
   "navigationStyle": "custom"
 }

@@ -18,7 +18,7 @@ Page({
       index: 2,
       url: 'http://p1.music.126.net/Yo-FjrJTQ9clkDkuUCTtUg==/109951164169441928.jpg',
     }],
-    switchIndex: 0,
+    switchIndex: 1,
     switchList: [
       {
         index: 0,
@@ -30,14 +30,21 @@ Page({
         index: 2,
         text: '专辑'
       }
-    ]
-  },
+    ],
+    slideButtons:  [{
+      type: 'warn',
+      text: '删除',
+    }]
+  }, 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
+  },
+  slideButtonTap(e) {
+    console.log('slide button tap', e.detail)
   },
 
   /**
@@ -89,7 +96,7 @@ Page({
 
   },
 
-  onChange: function (e) {
+  onChange (e) {
     const index = e.detail.current;
     this.setData({
       current: index //修改current的值
@@ -97,11 +104,15 @@ Page({
   },
 
  
-  onSwitch: function(e) {
+  onSwitch(e) {
     const index = e.target.dataset.index;
     this.setData({
       switchIndex: index //修改switchIndex的值
     });
+  },
+
+  goBack () {
+    wx.navigateBack()
   }
   
 

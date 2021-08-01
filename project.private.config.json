@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -56,6 +57,60 @@
         {
           "name": "pages/pic/pic",
           "pathName": "pages/pic/pic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/copyRight/copyRight",
+          "pathName": "pages/copyRight/copyRight",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/success/success",
+          "pathName": "pages/success/success",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myInteraction/myInteraction",
+          "pathName": "pages/myInteraction/myInteraction",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myAttention/myAttention",
+          "pathName": "pages/myAttention/myAttention",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/uploadAlbumList/uploadAlbumList",
+          "pathName": "pages/uploadAlbumList/uploadAlbumList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/albumDetail/albumDetail",
+          "pathName": "pages/albumDetail/albumDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/searchPic/searchPic",
+          "pathName": "pages/searchPic/searchPic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/releaseKeyword/releaseKeyword",
+          "pathName": "pages/releaseKeyword/releaseKeyword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/picDetail/picDetail",
+          "pathName": "pages/picDetail/picDetail",
           "query": "",
           "scene": null
         }

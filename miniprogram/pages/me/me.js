@@ -43,6 +43,13 @@ Page({
     })
   },
 
+  //去个人中心
+  goPersonal(){
+    wx.navigateTo({
+      url: `../../pages/personal/personal`,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

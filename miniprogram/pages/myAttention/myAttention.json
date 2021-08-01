@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "y-concern-talk": "/components/myConcernTalk/myConcernTalk",
+    "y-personal-album": "/components/personalAlbum/personalAlbum"
+  },
+  "navigationBarTitleText": "我的关注",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black"
 }

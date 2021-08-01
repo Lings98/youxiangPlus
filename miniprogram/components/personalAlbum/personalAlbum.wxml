@@ -1,2 +1,20 @@
-<!--components/personalAlbum/personalAlbum.wxml-->
-<text>components/personalAlbum/personalAlbum.wxml</text>
+
+<view class="album-block">
+  <view class="images-box">
+    <view class="image-item">
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    </view>
+    <view class="image-item">
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    </view>
+    <view class="image-item">
+      <image src="http://p1.music.126.net/xhWAaHI-SIYP8ZMzL9NOqg==/109951164167032995.jpg"></image>
+    </view>
+  </view>
+  <view class="album-infos">
+    <view class="name">Dota2</view>
+    <view wx:if="{{!isReview}}" class="concern-people">36人关注</view>
+    <view wx:if="{{isReview}}" class="check-type">审核中<image src="../../images/icon-time.png"></image></view>
+    <view wx:if="{{!isReview}}" class="type"><image src="../../images/s-collect-icon.png"></image>专辑</view>
+  </view>
+</view>

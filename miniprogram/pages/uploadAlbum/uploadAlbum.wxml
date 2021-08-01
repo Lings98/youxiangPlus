@@ -1,4 +1,4 @@
-<view class="upload-page">
+<view class="upload-page w-page page">
   <view class="mb-32">
     <label class="label">上传图片</label>
     <text class="num">{{pics.length}}/9</text>
@@ -33,11 +33,19 @@
       <text class="num" wx:if="{{keyWords.length}}">{{keyWords.length}}/5</text>
     </view>
   </view>
-  <view class="copyright">
-    <label class="label bold">版权说明</label>
-    <image class="explain-icon" src="../../images/explain-icon.png"></image>
-    <image class="arrow-right" src="../../images/arrow-right-icon.png"></image>
-  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      <view class="copyright">
+        <label class="label bold">版权说明</label>
+        <navigator url="../../pages/copyRight/copyRight" class="router-wrapper">
+          <image class="explain-icon" src="../../images/explain-icon.png"></image>
+        </navigator>
+        <image class="arrow-right" src="../../images/arrow-right-icon.png"></image>
+        <text class="picker-result">{{array[index]}}</text>
+      </view>
+    </view>
+  </picker>
+  
   <view class="btn-block">
     <y-button class="btn" bindtap="onRelease">发布</y-button>
   </view>

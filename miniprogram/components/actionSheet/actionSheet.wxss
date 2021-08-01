@@ -1,0 +1,6 @@
+.action-btn {
+  font-weight: inherit;
+  font-size: 18px;
+  width: 100% !important;
+  background-color: transparent;
+}
